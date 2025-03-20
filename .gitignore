@@ -1,2 +1,4 @@
 TaskManagerAPI/appsettings.json
 TaskManagerAPI/appsettings.Development.json
+TaskManagerAPI/obj
+TaskManagerAPI/bin
