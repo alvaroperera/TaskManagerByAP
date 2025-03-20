@@ -32,7 +32,7 @@ public class AuthController : ControllerBase
         };
 
         // Obtener la clave secreta
-        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"] ?? string.Empty));
         var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
         // Crear el token
@@ -51,6 +51,6 @@ public class AuthController : ControllerBase
 // Modelo de Login
 public class LoginModel
 {
-    public string Username { get; set; }
-    public string Password { get; set; }
+    public required string Username { get; set; }
+    public required string Password { get; set; }
 }
