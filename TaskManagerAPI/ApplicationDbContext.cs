@@ -1,4 +1,4 @@
-using GestorTareasApi.Models;
+using TaskManagerAPI.Models;
 using Microsoft.EntityFrameworkCore;
 
 public class ApplicationDbContext : DbContext

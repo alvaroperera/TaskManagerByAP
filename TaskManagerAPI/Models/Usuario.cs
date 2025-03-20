@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace GestorTareasApi.Models
+namespace TaskManagerAPI.Models
 {
     public class Usuario
     {

@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GestorTareasApi.Models
+namespace TaskManagerAPI.Models
 {
     public class Proyecto
     {
